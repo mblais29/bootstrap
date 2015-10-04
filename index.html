@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Bootstrap Template 1</title>
+    <title>Global Housing Markets</title>
 
     <!-- Bootstrap -->
     <link href="components/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet">
@@ -19,17 +19,47 @@
     <![endif]-->
   </head>
   <body>
-  	<div id="wrapper"> 
-		<button id="singlebutton" name="singlebutton" class="btn btn-info">Next Step!</button> 
+  	
+  	<div id="wrapper">
+  		<nav class="navbar navbar-default" role="navigation">
+	      <!-- Brand and toggle get grouped for better mobile display -->
+	      <div class="navbar-header">
+	        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+	          <span class="sr-only">Toggle navigation</span>
+	          <span class="icon-bar"></span>
+	          <span class="icon-bar"></span>
+	          <span class="icon-bar"></span>
+	        </button>
+	      </div>
+	
+	      <!-- Collect the nav links, forms, and other content for toggling -->
+	      <div class="collapse navbar-collapse navbar-ex1-collapse">
+	        <ul class="nav navbar-nav">
+	          <li><a href="#">Vancouver</a></li>
+	          <li><a href="#">Calgary</a></li>
+	          <li><a href="#">Los Angeles</a></li>
+	          <li><a href="#">New York City</a></li>
+	          <li><a href="#">London</a></li>
+	          <li><a href="#">Paris</a></li>
+	        </ul>
+	      </div><!-- /.navbar-collapse -->
+	    </nav>
+	    
+  		<!-- Creates a Large Button btn-lg -->
+		<button id="singlebutton" name="singlebutton" class="btn-lg btn-info" ></button> 
 		<div class="site-wrapper"> 
-			<img src="img/la.jpg"  />
-		    <img src="img/london.jpg"  />
-		    <img src="img/new-york-city.jpg"  />
-		    <img src="img/paris.jpg"  />
-		    <img src="img/vancouver.jpg"  />
-		    <img src="img/calgary.jpg"  />
+			<img src="img/la.jpg" title="Los Angeles"  />
+		    <img src="img/london.jpg" title="London"  />
+		    <img src="img/new-york-city.jpg" title="New York City"  />
+		    <img src="img/paris.jpg" title="Paris" />
+		    <img src="img/vancouver.jpg" title="Vancouver" />
+		    <img src="img/calgary.jpg" title="Calgary" />
 	    </div>
+	    <footer>
+			<h1 id="title">Global Housing Prices</h1>
+		</footer>
 	</div>
+	
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="components/jquery/jquery-2.1.4.min.js"></script>
