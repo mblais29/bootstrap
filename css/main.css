@@ -67,10 +67,15 @@ img{
 }
 
 #priceDiv{
-	border: 2px solid yellow;
+	width:70%;
+	border: 2px solid #269abc;
 	position: absolute;
 	top: 50%;
 	left: 50%;
+	color:#FFFFFF;
+	background-color: rgba(91,192,222, 0.4);
+	font-size:3em;
+	text-align: center;
 	transform: translate(-50%,-50%);
 	z-index: 5;
 }
@@ -81,7 +86,7 @@ a.boxclose{
     margin-right:-30px;
     cursor:pointer;
     color: #fff;
-    border-radius: 30px;
+    border-radius: 5px;
     background: #5bc0de;
     font-size: 31px;
     font-weight: bold;
@@ -92,6 +97,10 @@ a.boxclose{
 
 .boxclose:before {
     content: "×";
+}
+
+.boxclose:hover{
+	text-decoration: none;
 }
 
 /* Footer */
@@ -137,4 +146,38 @@ footer{
 		font-family: 'Rock Salt', cursive;
 		font-size: 2rem;
 	}
+	#priceDiv{
+		width:50%;
+		font-size: 1.5em;
+	}
+}
+
+@media screen and (max-width: 419px){
+    .navbar-default{
+		background-color: transparent;
+		border-color: transparent;
+	}
+	.navbar{
+		width: auto;	
+	}
+	.navbar-toggle{
+		float: none;
+	}
+	.navbar-nav>li>a{
+		color: #FFF !important;
+		font-family: 'Rock Salt', cursive;
+		font-size: 0.75em;
+	}
+	.navbar-nav>li>a:hover{
+		background-color: #5bc0de !important;
+	}
+	h1{
+		font-family: 'Rock Salt', cursive;
+		font-size: 1rem;
+	}
+	#priceDiv{
+		width:40%;
+		font-size: 0.85em;
+	}
+
 }
