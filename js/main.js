@@ -19,7 +19,7 @@ $(document).ready(function() {
 	  	$("#singlebutton").on('click', function() {   
 	  		 $("#singlebutton").css("top", "80%");     
              $('#priceDiv').fadeIn('fast');
-             $("#currency").fadeIn(3000);
+             $("#currency").fadeIn(2000);
               
         });
     //When the 'X' is selected fadeout the price   
@@ -37,13 +37,13 @@ $(document).ready(function() {
 });
 
 //Function to check if screen is smaller than 420px, if true make button smaller
-	function checkScreen(){
-		if ($(window).width() < 420) {
-	    	$("#singlebutton").attr('class', 'btn-sm btn-info');
-	    }else{
-	    	$("#singlebutton").attr('class', 'btn-lg btn-info');
-	    }
-	}
+function checkScreen(){
+	if ($(window).width() < 420) {
+    	$("#singlebutton").attr('class', 'btn-sm btn-info');
+    }else{
+    	$("#singlebutton").attr('class', 'btn-lg btn-info');
+    }
+}
 	
 //Function to check the image title and adjust the button text accordingly
 function checkImage(){
